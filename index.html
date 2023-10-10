@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+
+            * {
+                font-family: 'TWK Everett', Arial, Helvetica, sans-serif; 
+            }
+
+            .content {
+                max-width: 1280px !important;
+                margin: auto !important;
+            }     
+            .section-container  {
+                padding: 40px !important;
+            }
+
+            .grey-background {
+                background-color: #F4F4F2 !important;
+            }
+
+            .maverick-h1 {
+                color: #0C073D !important;
+                font-family: "TWK Everett" !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                font-size: 35px !important;
+            }
+            
+            .maverick-h2, .maverick-p {
+                color: #0C073D !important;
+                font-family: "TWK Everett" !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .maverick-font-arimo {
+                    color: #0C073D !important;
+                    font-family: 'Arimo', sans-serif !important;
+                }
+
+                .maverick-font-arimo-grey {
+                    color: #707070 !important;
+                    font-family: 'Arimo', sans-serif !important;
+                }
+
+                .maverick-font-arimo-white {
+                    color: white !important;
+                    font-family: 'Arimo', sans-serif !important;
+                    margin-top: 0 !important; 
+                    font-weight: 400 !important;
+                }
+
+            @font-face {
+                font-family: 'TWK Everett';
+                src: url('fonts/TWKEverett-Medium.eot');
+                src: url('fonts/TWKEverett-Medium.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TWKEverett-Medium.woff2') format('woff2'),
+                url('fonts/TWKEverett-Medium.woff') format('woff'),
+                url('fonts/TWKEverett-Medium.ttf')  format('truetype'),
+                url('fonts/TWKEverett-Medium.svg#TWK Everett') format('svg');
+                src: url('fonts/TWKEverett-Bold.eot');
+                src: url('fonts/TWKEverett-Bold.eot?#iefix') format('embedded-opentype'),
+                url('fonts/TWKEverett-Bold.woff2') format('woff2'),
+                url('fonts/TWKEverett-Bold.woff') format('woff'),
+                url('fonts/TWKEverett-Bold.ttf')  format('truetype'),
+                url('fonts/TWKEverett-Bold.svg#TWK Everett') format('svg');
+}
+
+            @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+
+            /* button */
+
+            .button {
+                background-color: white !important;
+                color: #0C073D !important;
+                font-family: 'Arimo', sans-serif !important;
+                border: 2px solid #0C073D !important;
+                border-radius: 9999px !important;
+                padding: 15px 32px !important;
+                text-align: center !important;
+                text-decoration: none !important;
+                display: inline-block !important;
+                font-size: 16px !important;
+                margin: 4px 2px !important;
+            }
+
+            .button-transparent {
+                background-color: white !important;
+                opacity: 80% !important;
+                color: #0C073D !important;
+                font-family: 'Arimo', sans-serif !important;
+                border: 2px solid #0C073D !important;
+                border-radius: 9999px !important;
+                padding: 15px 32px !important;
+                text-align: center !important;
+                text-decoration: none !important;
+                display: inline-block !important;
+                font-size: 16px !important;
+                margin: 4px 2px !important;
+            }
+
+            /* Maverick + Microsoft solved for you icons */
+
+            .icon-component-text {
+                text-align: center !important;
+                padding-left: 218px !important;
+                padding-right: 218px !important;
+            }
+
+            .icon-component {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                text-align: center !important;
+                padding: 0 166px 0 166px !important;
+                justify-content: space-between !important;
+            }
+
+            .hr-maverick {
+                color: #C3C3C3 !important;
+            }
+
+            .height-80 {
+                height: 80px !important;
+            }
+
+            /* Microsoft Teams logo grid */
+
+            .logo-grid {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
+                gap: 1px !important;
+            }
+
+            .grid-container{
+                width: 100% !important;
+                display: flex !important;
+                justify-content: center !important;
+            }
+
+            .mv-logos {
+                width: 100% !important;
+            }
+
+            /* Carousel styles */
+
+            .carousel {
+        margin-bottom: s0px !important;
+    }
+
+    .carousel__view {
+        width: 1200px !important;
+        height: 500px !important;
+        background: white !important;
+        /* box-shadow: 0 1px 8px #888; */
+        margin: auto !important;
+        overflow: hidden !important;
+        position: relative !important;
+    }
+
+    .carousel__control {
+        position: absolute !important;
+        z-index: 1 !important;
+        height: 500px !important;
+        width: 70px !important;
+        background-color: transparent !important;
+        transition: background-color 0.3s !important;
+        display: table !important;
+        cursor: pointer !important;
+    }
+
+    .carousel__control .icon {
+        display: table-cell !important;
+        vertical-align: middle !important;
+        text-align: center !important;
+    }
+
+    .carousel__control:hover {
+        background-color: rgba(221, 221, 221, .8) !important;
+    }
+
+    .carousel__control:first-of-type {
+        left: 0 !important;
+        font-size: 40px !important;
+    }
+
+    .carousel__control:last-of-type {
+        right: 0 !important;
+        font-size: 40px !important;
+    }
+
+    .product-list {
+        position: absolute !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transition: transform 0.3s !important;
+        transform: translateX(0px) !important;
+        list-style: none !important;
+        height: 500px !important;
+        display: flex !important;
+    }
+
+    .product-list__item {
+        width: 400px !important;
+        padding-top: 30px !important;
+        display: inline-block !important;
+        background-color: #F4F4F2 !important;
+    }
+
+    .product {
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        text-align: center !important;
+        background-color: #F4F4F2 !important;
+    }
+
+    .product span {
+        display: table-cell !important;
+        vertical-align: middle !important;
+        text-align: center !important;
+        color: white !important;
+        font-size: 50px !important;
+    }
+
+    .product[data-slide="1"] {
+        background-color: #ffffff !important;
+    }
+
+    .product[data-slide="2"] {
+        background-color: #ffffff !important;
+    }
+
+    .product[data-slide="3"] {
+        background-color: #ffffff !important;
+    }
+
+    .product[data-slide="4"] {
+        background-color: #ffffff !important;
+    }
+
+    .product[data-slide="5"] {
+        background-color: #ffffff !important;
+    }
+
+    .product[data-slide="6"] {
+        background-color: #ffffff !important;
+    }
+
+    .product[data-slide="7"] {
+        background-color: #ffffff !important;
+    }
+        
+    /* Additional slide styles */
+    .slide-img-wrap {
+        width: 400px !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    .slide-img {
+        width: 100% !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    /* This needs a fixed hieght with content setting at the top */
+    .slide-text-wrap {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        color: #575757 !important;
+        width: auto !important;
+
+        padding: 40px;
+    }
+
+    .slide-heading {
+        width: 100%;
+    }
+
+    .slide-text {
+        font-family: "Arimo", sans-serif !important;
+        color: #575757 !important;
+        text-align: center !important;
+    }
+
+    .slide-heading {
+        font-family: "Arimo", sans-serif !important;
+        color: #0C073D !important;
+        text-align: center !important;
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        font-style: normal;
+        line-height: 34px !important;
+    }
+
+    .slide-text {
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        font-style: normal;
+        line-height: 20px !important;
+    }
+
+    /* Icon styling Microsoft Teams Room */
+
+    .icon-component-no-pad {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                text-align: center !important;
+                justify-content: space-between !important;
+            }
+
+    .icon-space-between {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .icon-smaller {
+        width: 80px !important;
+    }
+
+
+    .icon-component-350px
+    {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                text-align: center !important;
+                justify-content: center !important;
+                gap: 30px !important;
+
+    }
+
+    .component-flex-center
+    {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                text-align: center !important;
+                justify-content: center !important;
+                align-items: center !important;
+                gap: 30px !important;
+    }
+
+    /* Bottom gradient */
+
+    .gradient-background {
+        background-image: url('images/gradient-background.png') !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        height: 300px !important;
+        width: 100% !important;
+    }
+
+    .maverick-font-arimo-white {
+        color: white !important;
+        font-family: 'Arimo', sans-serif !important;
+
+    }
+
+        </style>
+    </head>
+
+    <body >
+        <div class="content">
+
+            <header>
+                <img src="images/Group 33.png" alt="TD synnex logo & Maverick">
+            </header>
+
+            <section>
+                <img src="images/hero inmage.png" alt="microsoft logo on graident green and blue background with image of man on an online call with four others">
+            </section>
+
+            <section class="grey-background">
+
+                <!-- Maverick + Microsoft solved for you icons -->
+
+                <div class="section-container">
+                    <div class="icon-component-text" >
+                        <h1 class="maverick-h1">Maverick + Microsoft solved for you</h1>
+                        <h2 class="maverick-font-arimo">At Maverick we enable our reseller partners to design and deploy Microsoft Teams Rooms experiences from end to end. </h2>
+                    </div>
+                    <div class="icon-component">
+                        <div style="padding-right:95px;">
+                            <img src="images/Ellipse 1-users.png" alt="teams icon">
+                            <h2 class="maverick-h2">270 million monthly active Teams users</h2>
+                            <p class="maverick-font-arimo">Teams is the runaway market leader and has a brilliant ecosystem of Teams Room technology to enable it in the meeting space. </p>
+                        </div>
+
+                        <div>
+                            <img src="images/Ellipse 1-office-ready.png" alt="teams icon">
+                            <h2 class="maverick-h2 height-80">Less than 8% office ready</h2>
+                            <p class="maverick-font-arimo">Only 7.8% out of the nearly 90 million meetings rooms worldwide already have the appropriate equipment for hybrid meetings, representing a huge opportunity for integrators.</p>
+                        </div>
+
+                        <div style="padding-left:95px;">
+                            <img src="images/Ellipse 3-vid-conference.png" alt="video conference icon">
+                            <h2 class="maverick-h2 height-80">Top priority video conferencing</h2>
+                            <p class="maverick-font-arimo">Video conferencing is the #2 IT priority right after cloud migrations. Video conferencing systems are now built around the networked IT ecosystem. </p>
+                        </div>
+                    </div>
+                </div>
+                <hr width="90%" color="#C3C3C3" size="1" align="center" margin-top="">
+
+                <!-- Microsoft Teams logo grid -->
+
+                <section class="section-container">
+                    <div class="icon-component-text" >
+                        <h1 class="maverick-h1">Microsoft Teams Rooms certified devices</h1>
+                        <h2 class="maverick-font-arimo">With the most extensive collection of top-tier manufacturers offering Microsoft Teams Rooms certified devices, Maverick stands out as the premier partner for integrators to access specialist services and resources for your Teams Room projects. </h2>
+                    </div>
+                    
+                    <div class="grid-container">
+                        <div class="logo-grid">
+                            <div>
+                                <img src="images/mv-logo-lenovo.png" alt="">
+                            </div>
+                            <div>
+                                <img src="images/mv-logo-neat.png" alt="">
+                            </div>
+                            <div>
+                                <img src="images/mv-logo-cisco.png" alt="">
+                            </div>  
+                            <div>
+                                <img src="images/mv-logo-jabra.png" alt="">
+                            </div>
+                            <div>
+                                <img src="images/mv-logo-crestron.png" alt="">
+                            </div>
+                            <div>
+                                <img src="images/mv-logo-bose.png" alt="">
+                            </div>
+                            <div>
+                                <img src="images/mv-logo-microsoft.png" alt="">
+                            </div>
+                            <div>
+                                <img src="images/mv-logo-logitech.png" alt="">
+                            </div>  
+                            <div>
+                                <img src="images/mv-logo-sennheiser.png" alt="">
+                            </div>  
+                            <div>
+                                <img src="images/mv-logo-huddly.png" alt="">
+                            </div> 
+                        </div>
+                    </div>
+                </section>
+                        <hr width="90%" color="#C3C3C3" size="1" align="center">
+
+                <!-- Spotlight Products -->
+
+                <section class="section-container">
+
+
+                    <div class="icon-component-text" >
+                        <h1 class="maverick-h1">Spotlight Products</h1>
+                        <h2 class="maverick-font-arimo">Hardware solutions certified for Microsoft Teams Rooms </h2>
+                    </div>
+
+
+                    <div class="carousel js-product-carousel ">
+                        <div class="carousel__view ">
+                            <!-- <span class="carousel__control js-carousel-prev"><i class="icon">🡠</i></span>
+                            <span href="#" class="carousel__control js-carousel-next"><i class="icon">🡢</i></span> -->
+                            <ul class="product-list js-product-list grey-background">
+                               
+                               
+                                <li class="product-list__item ">
+                                    <div data-slide="1" class="product ">
+                                        <div class="slide-img-wrap ">
+                                            <img class="slide-img grey-background"
+                                            src="images/mv-carousel-conference-kit.png"
+                                            alt="">
+                                        </div>
+                                        <div class="slide-text-wrap grey-background">
+                                            <h3 class="slide-heading ">
+                                                Crestron Flex UC-MX70-T
+                                            </h3>
+                                            <p class="slide-text ">
+                                                The UC-M50-T Crestron Flex tabletop conferencing system provides a medium room video conference solution for use with Microsoft Teams.
+                                            </p>                                    
+                                        </div>
+                                    </div>
+                                </li>
+                              
+                                <li class="product-list__item ">
+                                    <div data-slide="2" class="product ">
+                                        <div class="slide-img-wrap">
+                                            <img class="slide-img grey-background"
+                                            src="images/mv_carousel_lenovo.png"
+                                            alt="">
+                                        </div>
+                                        <div class="slide-text-wrap grey-background">
+                                            <h3 class="slide-heading">
+                                                Lenovo ThinkSmart One
+                                            </h3>
+                                            <p class="slide-text">
+                                                The first Windows-based bar, is ideal for any business seeking a sustainable solution to its collaboration needs.
+                                            </p>                                    
+                                        </div>
+                                    </div>
+                                </li>
+                               
+                                <li class="product-list__item ">
+                                    <div data-slide="3" class="product">
+                                        <div class="slide-img-wrap">
+                                            <img class="slide-img grey-background"
+                                            src="images/mv-carousel-bar.png"
+                                            alt="">
+                                        </div>
+                                        <div class="slide-text-wrap grey-background">
+                                            <h3 class="slide-heading">
+                                                Logitech Tap with RallyBar
+                                            </h3>
+                                            <p class="slide-text">
+                                                Quickly join and easily host Microsoft Teams meetings. Suitable for medium sized rooms with the Logitech Rally Plus.
+                                            </p>     
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                
+            
+
+
+                </section>
+                        <hr width="90%" color="#C3C3C3" size="1" align="center">
+
+                <!-- Microsoft Teams Room -->
+
+                <section class="section-container">
+
+
+                    <div class="icon-component-text" >
+                        <h1 class="maverick-h1">What is a Microsoft Teams Room?</h1>
+                    </div>
+
+
+                    <div class="section-container">
+   
+                        <div class="icon-component-no-pad">
+                            <div class="icon-space-between">
+                                <img src="images/mv_teams_room_inclusive.png" alt="teams icon" class="icon-smaller" >
+                                <p class="maverick-h2">Inclusive</p>
+                                <p class="maverick-font-arimo">Foster inclusive and interactive team meetings for everyone, regardless of where they are.</p>
+                            </div>
+    
+                            <div class="icon-space-between">
+                                <img src="images/mv_teams_room_easy.png" alt="teams icon" class="icon-smaller" >
+                                <p class="maverick-h2 ">Easy to use for all</p>
+                                <p class="maverick-font-arimo">Deliver consistent Teams experiences designed to make collaboration easy and hassle-free. </p>
+                            </div>
+    
+                            <div class="icon-space-between">
+                                <img src="images/mv_teams_room_flexible.png" alt="video conference icon" class="icon-smaller" >
+                                <p class="maverick-h2">Flexible</p>
+                                <p class="maverick-font-arimo">Turn any shared space into a Teams Room with a wide selection of devices and features to fit every need.</p>
+                            </div>
+
+                            <div class="icon-space-between">
+                                <img src="images/mv_teams_room_secured.png" alt="video conference icon" class="icon-smaller" >
+                                <p class="maverick-h2 ">Secured & managed</p>
+                                <p class="maverick-font-arimo">Keep devices protected and up to date with rich management capabilities and powerful analytics.</p>
+                            </div>
+                        </div>
+
+                        <div class="icon-component-text" >
+                            <h2 class="maverick-font-arimo">A Microsoft Teams Room is a cutting-edge meeting space solution expertly designed to bridge the gaps between locations and individuals, in office environments, bringing hybrid workers into meetings seamlessly through Teams.</h2>
+                            <p class="maverick-font-arimo-grey">Microsoft Teams Rooms promote inclusive and collaborative meetings, guaranteeing that all participants have an equal presence at the virtual table, irrespective of their joining location.  
+                            <p class="maverick-font-arimo">Enhancing the meeting experience with Microsoft Teams Room Pro License. </p>
+                            <p class="maverick-font-arimo-grey">Microsoft Teams Rooms Pro delivers an enhanced meeting experience through its intelligent audio and video, front row and large galleries, and dual screen support. With Teams Rooms Pro, teams can experience better communication and collaboration during meetings.</p>
+                            <!-- button -->
+                            <p class="button">Find out more</p>
+                            </div>
+
+
+                    </div>
+
+
+
+                </section>
+                <hr width="90%" color="#C3C3C3" size="1" align="center">
+
+
+                <!-- Microsoft Business Dev Managers -->
+               
+                <section class="section-container">   
+
+                    <div class="icon-component-text" >
+                        <h1 class="maverick-h1">Meet our Microsoft Business Development Managers</h1>
+                    </div>
+
+                <div class="section-container">
+                    <div class="icon-component-350px">
+                        <div>
+                            <img src="images/Tom-Ballard.png" alt="Headshot of Tom">
+                            <h2 class="maverick-font-arimo">Tom Ballard</h2>
+                            <p class="maverick-font-arimo">Based in the UK</p>
+                            <img src="images/LI-In-Bug.png" alt="">
+                        </div>
+
+                        <div>
+                            <img src="images/Mette.png" alt="Headshot of Mette">
+                            <h2 class="maverick-font-arimo">Mette Finneman</h2>
+                            <p class="maverick-font-arimo">Based in the Nordics</p>
+                            <img src="images/LI-In-Bug.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                </section>
+
+                <!-- bottom of main page -->
+                
+            </section>
+            <section >
+            
+                <div class="component-flex-center gradient-background">
+                    <div>
+                        <h2 class="maverick-font-arimo-white">Not a TD SYNNEX 
+                            <br>
+                            Partner yet?</h2>
+                        <p class="button-transparent">Register here</p>
+                    </div>
+
+                    <div>
+                        <h2 class="maverick-font-arimo-white">Not a TD SYNNEX 
+                            <br>
+                            Microsoft Partner yet?</h2>
+                        <p class="button-transparent">Contact us</p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Carousel JS -->
+
+<script>
+    (function () {
+        var carousels = document.querySelectorAll('.js-product-carousel');
+
+        [].forEach.call(carousels, function (carousel) {
+            carouselize(carousel);
+        });
+
+    })();
+
+    function carouselize(carousel) {
+        var productList = carousel.querySelector('.js-product-list');
+        var productListWidth = 0;
+        var productListSteps = 0;
+        var products = carousel.querySelectorAll('.product');
+        var productAmount = 0;
+        var productAmountVisible = 4;
+        var carouselPrev = carousel.querySelector('.js-carousel-prev');
+        var carouselNext = carousel.querySelector('.js-carousel-next');
+
+        //Count all the products
+        [].forEach.call(products, function (product) {
+            productAmount++;
+            productListWidth += 400;
+            productList.style.width = productListWidth + "px";
+        });
+
+        carouselNext.onclick = function () {
+            if (productListSteps < productAmount - productAmountVisible) {
+                productListSteps++;
+                moveProductList();
+            }
+        }
+        carouselPrev.onclick = function () {
+            if (productListSteps > 0) {
+                productListSteps--;
+                moveProductList();
+            }
+        }
+
+        // This is a bit hacky, let me know if you find a better way to do this!
+        // Move the carousels product-list
+        function moveProductList() {
+            productList.style.transform = "translateX(-" + 400 * productListSteps + "px)";
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

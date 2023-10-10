@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html><head>
+        <meta charset="utf-8">
+        <style type="text/css">
+
+            @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500&family=PT+Serif:wght@400;700&display=swap');
+
+            
+            * {
+                font-family: 'Arimo', sans-serif;
+                font-family: 'Nunito Sans', sans-serif;
+                font-family: 'PT Serif', serif;
+            }
+
+            .mp-content {
+                max-width: 1280px !important;
+                margin: auto !important;
+            }     
+            .section-container  {
+                padding: 40px !important;
+            }
+
+            .grey-background {
+                background-color: #F4F4F2 !important;
+            }
+
+            .maverick-h1 {
+                color: #0C073D !important;
+                font-family: "Nunito Sans" !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                font-size: 35px !important;
+                font-weight: bold !important;
+            }
+
+            h2 {
+                font-size: 20px !important;
+                line-height: 1.5 !important;
+            }
+
+            p {
+                margin: 0 0 10px !important;
+                line-height: 1.5 !important;
+                font-size: 16px !important;
+            }
+            
+            .hero-img {width:100%;
+            height:auto;}
+
+            .maverick-h2, .maverick-p {
+                color: #0C073D !important;
+                font-family: "Nunito Sans" !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                
+            }
+
+            .maverick-font-arimo {
+                    color: #0C073D !important;
+                    font-family: 'Arimo', sans-serif !important;
+                    font-weight: 400 !important;
+                }
+
+                .maverick-font-arimo-grey {
+                    color: #707070 !important;
+                    font-family: 'Arimo', sans-serif !important;
+                }
+
+                .maverick-font-arimo-white {
+                    color: white !important;
+                    font-family: 'Arimo', sans-serif !important;
+                    margin-top: 0 !important; 
+                    font-weight: 400 !important;
+                }
+
+
+            /* button */
+
+            .button {
+                background-color: white !important;
+                color: #0C073D !important;
+                font-family: 'Arimo', sans-serif !important;
+                border: 2px solid #0C073D !important;
+                border-radius: 9999px !important;
+                padding: 10px 2px !important;
+                text-align: center !important;
+                text-decoration: none !important;
+                display: inline-block !important;
+                font-size: 16px !important;
+                margin: 4px 2px !important;
+                float: none;
+            }
+
+            .button-transparent {
+                background-color: white !important;
+                opacity: 80% !important;
+                color: #0C073D !important;
+                font-family: 'Arimo', sans-serif !important;
+                border: 2px solid #0C073D !important;
+                border-radius: 9999px !important;
+                padding: 15px 32px !important;
+                text-align: center !important;
+                text-decoration: none !important;
+                display: inline-block !important;
+                font-size: 16px !important;
+                margin: 4px 2px !important;
+            }
+
+            /* Maverick + Microsoft solved for you icons */
+
+            .icon-component-text {
+                text-align: center !important;
+                padding-left: 218px !important;
+                padding-right: 218px !important;
+            }
+
+
+            .icon-component {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                text-align: center !important;
+                padding: 0 166px 0 166px !important;
+                justify-content: space-between !important;
+            }
+
+            .hr-maverick {
+                color: #C3C3C3 !important;
+            }
+
+            .height-80 {
+                height: 80px !important;
+            }
+
+            .height-50 {
+                height: 50px !important;
+            }
+
+            .height-116 {
+                height: 116px !important;
+            }
+
+
+            /* Microsoft Teams logo grid */
+
+            .logo-grid {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr 1fr 1fr !important;
+                gap: 1px !important;
+            }
+
+
+            .grid-container{
+                width: 100% !important;
+                display: flex !important;
+                justify-content: center !important;
+            }
+
+            .mv-logos {
+                width: 100% !important;
+            }
+
+            /* Upgrade your knowledge grid */
+
+
+            .logo-grid-knowledge {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr !important;
+                gap: 10px !important;
+                width: 50%;
+            }
+
+            .knowledge-img {
+                width: 60% !important;
+            }
+
+            .center-text {
+                display: grid;
+                text-align: center;
+            }
+
+              /* Vendor grid */
+
+              .logo-grid-vendor {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr 1fr !important;
+                gap: 10px !important;
+                width: 75%;
+                height: 100%;
+            }
+
+
+            .grid-container{
+                width: 100% !important;
+                display: flex !important;
+                justify-content: start !important;
+            }
+
+            .mv-logos {
+                width: 100% !important;
+            }
+
+            /* Videos grid */
+            .logo-grid-video {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr 1fr 1fr  !important;
+                gap: 10px !important;
+                width: 100%;
+            }
+
+             /* Training grid */
+             .logo-grid-training {
+                display: grid !important;
+                grid-template-columns: 1fr   !important;
+                gap: 10px !important;
+                width: 25%;
+            }
+
+                /* assets grid */
+            .logo-grid-assets {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr 1fr 1fr !important;
+                gap: 10px !important;
+                width: 100%;
+                height: auto;
+            }
+
+            .mv-logos {
+                width: 100% !important;
+            }
+
+            /* Microsoft assets grid */
+
+            .logo-grid-microsoft {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr 1fr 1fr !important;
+                gap: 10px !important;
+                width: 100%;
+                height: auto;
+            }
+
+
+
+            /* Carousel styles */
+
+            .carousel {
+        margin-bottom: s0px !important;
+    }
+
+    .carousel__view {
+        
+        height: 500px !important;
+        background: white !important;
+        /* box-shadow: 0 1px 8px #888; */
+        margin: auto !important;
+        overflow: hidden !important;
+        position: relative !important;
+    }
+
+    .carousel__control {
+        position: absolute !important;
+        z-index: 1 !important;
+        height: 500px !important;
+        width: 70px !important;
+        background-color: transparent !important;
+        transition: background-color 0.3s !important;
+        display: table !important;
+        cursor: pointer !important;
+    }
+
+    .carousel__control .icon {
+        display: table-cell !important;
+        vertical-align: middle !important;
+        text-align: center !important;
+    }
+
+    .carousel__control:hover {
+        background-color: rgba(221, 221, 221, .8) !important;
+    }
+
+    .carousel__control:first-of-type {
+        left: 0 !important;
+        font-size: 40px !important;
+    }
+
+    .carousel__control:last-of-type {
+        right: 0 !important;
+        font-size: 40px !important;
+    }
+
+    .product-list {
+        position: absolute !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transition: transform 0.3s !important;
+        transform: translateX(0px) !important;
+        list-style: none !important;
+        height: 500px !important;
+        display: flex !important;
+    }
+
+    .product-list__item {
+        width: 400px !important;
+        padding-top: 30px !important;
+        display: inline-block !important;
+        background-color: #F4F4F2 !important;
+    }
+
+    .product {
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        text-align: center !important;
+        background-color: #F4F4F2 !important;
+    }
+
+    .product span {
+        display: table-cell !important;
+        vertical-align: middle !important;
+        text-align: center !important;
+        color: white !important;
+        font-size: 50px !important;
+    }
+
+    .product[data-slide="1"] {
+        background-color: #ffffff !important;
+    }
+
+    .product[data-slide="2"] {
+        background-color: #ffffff !important;
+    }
+
+    .product[data-slide="3"] {
+        background-color: #ffffff !important;
+    }
+
+    .product[data-slide="4"] {
+        background-color: #ffffff !important;
+    }
+
+    .product[data-slide="5"] {
+        background-color: #ffffff !important;
+    }
+
+    .product[data-slide="6"] {
+        background-color: #ffffff !important;
+    }
+
+    .product[data-slide="7"] {
+        background-color: #ffffff !important;
+    }
+        
+    /* Additional slide styles */
+    .slide-img-wrap {
+        width: 400px !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    .slide-img {
+        width: 100% !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    /* This needs a fixed height with content setting at the top */
+    .slide-text-wrap {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        color: #575757 !important;
+        width: auto !important;
+
+        padding: 40px;
+    }
+
+    .slide-heading {
+        width: 100%;
+    }
+
+    .slide-text {
+        font-family: "Arimo", sans-serif !important;
+        color: #575757 !important;
+        text-align: center !important;
+    }
+
+    .slide-heading {
+        font-family: "Arimo", sans-serif !important;
+        color: #0C073D !important;
+        text-align: center !important;
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        font-style: normal;
+        line-height: 34px !important;
+    }
+
+    .slide-text {
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        font-style: normal;
+        line-height: 20px !important;
+    }
+
+    /* Icon styling Microsoft Teams Room */
+
+    .icon-component-no-pad {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                text-align: center !important;
+                justify-content: space-between !important;
+            }
+
+    .icon-space-between {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .icon-smaller {
+        width: 80px !important;
+    }
+
+
+    .icon-component-headshot
+    {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                text-align: center !important;
+                justify-content: center !important;
+                gap: 30px !important;
+
+    }
+
+    .component-flex-center
+    {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                text-align: center !important;
+                justify-content: center !important;
+                align-items: center !important;
+                gap: 200px !important;
+    }
+
+
+    /* Bottom gradient */
+
+    .gradient-background {
+        background-image: url('https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/gradient-background.png') !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        height: 300px !important;
+        width: 100% !important;
+    }
+
+    .maverick-font-arimo-white {
+        color: white !important;
+        font-family: 'Arimo', sans-serif !important;
+
+    }
+
+    /* TD Synnex Classes*/
+
+    .content-wrap .content {
+    width: 1280px !important;
+    margin: 0 !important;
+}
+
+    /* about page styles */
+
+
+    .flex-left
+            {   
+                display: flex;
+                justify-content: left;
+                padding: 30px 0 30px 0;
+            }
+
+
+    .center-div {
+        margin: auto;
+        width: 100%;
+        padding: 0 75px 0 75px;
+    }
+
+
+    .center-button {
+        text-align: center;
+    }
+
+    /* card styling */
+
+    .card {
+        border-radius: 5px; /* 5px rounded corners */
+        /* border: solid 1px; */
+        text-align: left;
+        background-color: white;
+        }
+
+.card img {
+  border-radius: 5px 5px 0px 0px ;
+  
+}
+
+.card-padding-30px {
+    padding-left: 20px !important;
+    padding-right: 30px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.card-p-arimo {
+    color: #707070 !important;
+    font-family: 'Arimo', sans-serif !important;
+    line-height: 1 !important;
+}
+
+.card-h2-arimo {
+    color: #0C073D !important;
+    font-family: "Nunito Sans" !important;
+    line-height: 1 !important;
+
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* box model */
+
+.micro-flex {
+            display:flex;
+            gap: 6%;
+            width: 100%;
+            padding-top: 30px;
+            padding-bottom: 30px ;
+        }
+
+
+      
+        .micro-inner-container  {
+                padding-left: 10px !important;
+                padding-top: 80px !important;
+            }
+        
+            .micro-inner-container-left  {
+                padding-left: 65px !important;
+                padding-top: 80px !important;
+            }
+
+
+        .flex-col-1 {
+            width: 550px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-col-2 {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start ;
+        }
+
+ /* resize li */
+
+ .li-16px {
+    font-size: 16px;
+ }
+
+ .pad-btm-20px {
+    padding-bottom: 20px !important;
+ }
+</style>
+    </head>
+
+    <body>
+        <div class="mp-content">
+
+            <header>
+                <img class="hero-img" src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/group%2033.png" alt="TD synnex logo &amp; Maverick">
+            </header>
+
+            <section>
+                <img class="hero-img" src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/hero-image-banner-pg1-new.png" alt="microsoft logo on graident green and blue background with image of man with a megaphone in a meeting">
+            </section>
+
+            <section class="grey-background">
+                
+
+    <!-- left align image -->
+
+                
+                <div class="micro-flex">
+                    <div class="flex-col-1">
+                    <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/mv-pg1-teams.png" alt="">
+                </div>
+                    <div class="flex-col-2 micro-inner-container">
+                        <h1 class="maverick-h1 height-116">Empower teams with Microsoft Teams </h1>
+                        <p class="maverick-font-arimo-grey">Every business goes to market differently. Whether you’re buying Microsoft licences to sell to your customers as part of SaaS solutions or you are a Microsoft reseller, wanting to upgrade your MTR offering. <br>
+                            <br>Maverick can tailor its services to meet your needs as a Microsoft Reseller, including being your larger CSP partner to support with a cloud marketplace platform.
+                            </p>
+                    </div>
+                </div>
+                
+                <hr width="90%" color="#C3C3C3" size="1" align="center" margin-top="">
+    <!-- Why Partner wih Microsoft Teams? -->
+
+
+                <div >
+                    <div class="card-padding-30px"></div>
+                    <div class="icon-component-text">
+                        <h1 class="maverick-h1">Why Partner with Microsoft Teams?</h1>
+                        <h2 class="maverick-font-arimo">With millions of users worldwide, Microsoft Teams has established itself as the leading collaboration platform in the market.</h2>
+                        <p class="maverick-font-arimo-grey">Whether your customers are small businesses, enterprises or anything in between, Microsoft Teams offers versatile solutions tailored to their unique needs.
+                           <br>
+                           <br>
+                            Leverage the power of Microsoft’s ecosystem with seamless integration with Microsoft 365 apps, OneDrive, SharePoint, and more. Help your customers streamline their workflows and enhance efficiency by bringing their favourite tools directly into Teams.
+                            </p>
+                    </div>
+                    <div class="center-button">
+                        <a href="https://eu.tdsynnex.com/maverick/vendors/Microsoft/partners"><p class="button-transparent" >Find out more</p></a>
+                        </div>
+                </div>
+                <div class="card-padding-30px"></div>
+
+                <hr width="90%" color="#C3C3C3" size="1" align="center" margin-top="">
+
+
+
+    <!-- right align image -->
+
+                <div class="micro-flex" >
+                    <div class="micro-inner-container-left ">
+                        <h1 class="maverick-h1 pad-btm-20px">Why partner with Maverick? </h1>
+                        <ul class="maverick-font-arimo-grey">
+                            <li class="maverick-font-arimo-grey li-16px">Long-standing Microsoft Gold Partner</li> <br>
+                            <li class="maverick-font-arimo-grey li-16px">Surface Distributor of the Year 2023</li> <br>
+                            <li class="maverick-font-arimo-grey li-16px">Microsoft Business Transformation Partner of the Year Award for Operational Excellence. </li> <br>
+                            <li class="maverick-font-arimo-grey li-16px">Dedicated Microsoft Business Development Managers</li> <br>
+                        </ul>
+                    </div>
+                    <div class="flex-col-1">
+                    <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/mv-pg1-partner.png" alt="">
+                </div>
+                </div>
+ <!-- level up your business offering -->
+ <hr width="90%" color="#C3C3C3" size="1" align="center" margin-top="">
+ <section>
+    <div class="card-padding-30px"></div>
+    <div class="icon-component-text">
+        <h1 class="maverick-h1">Ready to level up your business offering? </h1>
+        <h2 class="maverick-font-arimo">Upgrade your knowledge with our bank of resources for MSPs.</h2>
+    </div>
+    
+</section>
+
+<!-- Resources: Knowlegde -->
+<section class="section-container">
+    
+    <div>
+        <h2 class="maverick-font-arimo">Training</h2>
+    </div>
+    <div class="grid-container">
+        <div class="logo-grid-training">
+             <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/teams-deployment.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                 <a href="https://learn.microsoft.com/en-gb/training/paths/prepare-environment-for-microsoft-teams-deployment/" target="_blank"> <h2 class="card-h2-arimo"> Prepare the environment for a Microsoft Teams <br>deployment</h2></a>
+                  <p class="maverick-p"></p>
+                </div>
+              </div>
+            <!-- <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/teams-phone.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                  <a href="https://assetsprod.microsoft.com/mpn/en-us/microsoft-teams-rooms-interoperability.pptx"><h2 class="card-h2-arimo">Microsoft Teams Rooms interoperability</h2></a>
+                
+                </div>
+              </div> -->
+        </div>
+    </div>
+
+    <div class="card-padding-30px"></div>
+
+    <div>
+        <h2 class="maverick-font-arimo">Microsoft assets</h2>
+    </div>
+
+    <div class="grid-container">
+        <div class="logo-grid-vendor">
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/will-ai-work.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                    <h2 class="maverick-h2">Will AI Fix Work?</h2>
+                    <p class="card-p-arimo"> 2023 Work Trend Index: Annual <br> Report
+                        <br>
+                        <br><a class="link-arimo maverick-p" href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/EU_Website/WTI_Will_AI_Fix_Work_060723.pdf" target="_blank">⬇︎ Download pdf</a>
+                    </p>
+                 </div>
+              </div>
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/micro-surface.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                    <h2 class="maverick-h2">Microsoft Surface</h2>
+                    <p class="card-p-arimo">Creating Agile Meetings with <br>Microsoft Surface Hub
+                        <br>
+                        <br><a class="link-arimo maverick-p" href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/EU_Website/Microsoft hub Contentv4 (1).pdf" target="_blank">⬇︎ Download pdf</a>
+                    </p>
+                  </div>
+              </div>
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/teams-for-edu.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                    <h2 class="card-h2-arimo">Microsoft Teams for <br>Education</h2>
+                    <p class="card-p-arimo">Quick Start Guide for Educators
+                        <br>
+                        <br><a class="link-arimo maverick-p" href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/EU_Website/EDU_QuickStartGuide_Educators.pdf" target="_blank">⬇︎ Download pdf</a>
+                    </p>
+                     </div>
+              </div>
+             
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/knowledge.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                 <a href="https://indd.adobe.com/view/35040664-bc91-4cca-8672-bca8a29e4cae?aliId=eyJpIjoiM0NaaEtDYWpoaEVMOTg4ViIsInQiOiJIMlNlR1VFTDZVdGpz" target="_blank"> <h2 class="card-h2-arimo"> Microsoft Converged Communications eBook</h2></a>
+                  <p class="maverick-p"></p>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/teams-phone.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                  <a href="https://www.microsoft.com/en-us/microsoft-365/blog/2022/08/29/discover-how-microsoft-teams-phone-keeps-12-million-pstn-users-connected/" target="_blank"><h2 class="maverick-h2">Microsoft Teams</h2></a>
+                  <p class="card-p-arimo">Discover how Microsoft Teams <br> Phone keeps 12 million PSTN users <br> connected</p>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/mtr.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                  <a href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/EU_Website/microsoft-teams-rooms-customer-ready-presentation-2-compressed.pdf" target="_blank"><h2 class="maverick-h2">Microsoft Teams Rooms</h2></a>
+                  <p class="card-p-arimo">Customer ready presentation 
+                </div>
+              </div>
+
+
+        </div>
+    </div>
+    <div class="card-padding-30px"></div>
+
+    <!-- Microsoft partners deck -->
+
+    <div>
+        <h2 class="maverick-font-arimo">Microsoft Partner Deck</h2>
+    </div>
+    <div class="grid-container">
+        <div class="logo-grid-vendor">
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/english-mav.png" alt="" style="width:75%">
+                <div class="container card-padding-30px">
+                    <h2 class="maverick-h2">English</h2>
+                    <p class="card-p-arimo"> 
+                        <br>
+                        <br><a class="link-arimo maverick-p" href="https://www.dropbox.com/scl/fi/awwht9vctivfd25urxmkr/Microsost-Teams-Value-English.pptm?rlkey=0oxk3uxi9qzi8xymzgzjwmkzv&dl=0" target="_blank">⬇︎ Download pptx</a>
+                    </p>
+                 </div>
+              </div>
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/dutch-mav.png" alt="" style="width:75%">
+                <div class="container card-padding-30px">
+                    <h2 class="maverick-h2">Dutch </h2>
+                    <p class="card-p-arimo">
+                        <br>
+                        <br><a class="link-arimo maverick-p" href="https://www.dropbox.com/scl/fi/3m5v07hjxkm8dtzl09rl9/Microsost-Teams-Value-Dutch.pptm?rlkey=p0liy0ch29uh1zo5w9rms4ro5&dl=0" target="_blank">⬇︎ Download pptx</a>
+                    </p>
+                  </div>
+              </div>
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/french-mav.png" alt="" style="width:75%">
+                <div class="container card-padding-30px">
+                    <h2 class="maverick-h2">French</h2>
+                    <p class="card-p-arimo">
+                        <br>
+                        <br><a class="link-arimo maverick-p" href="https://www.dropbox.com/scl/fi/yk1larj5kxj0dhsf1tsga/Microsost-Teams-Value-French.pptm?rlkey=8azr42cq3hildp1btbqii4jdb&dl=0" target="_blank">⬇︎ Download pptx</a>
+                    </p>
+                     </div>     
+              </div>
+
+
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/german-mav.png" alt="" style="width:75%">
+                <div class="container card-padding-30px">
+                    <h2 class="maverick-h2">German</h2>
+                    <p class="card-p-arimo">
+                        <br>
+                        <br><a class="link-arimo maverick-p" href="https://www.dropbox.com/scl/fi/uzj4xv2ydrnaonku1alui/Microsoft-Teams-Value-German.pptx?rlkey=2wegwm2bf6swm43t6w2w40143&dl=0" target="_blank">⬇︎ Download pptx</a>
+                    </p>
+                     </div>     
+              </div>
+
+
+
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/spanish-mav.png" alt="" style="width:75%">
+                <div class="container card-padding-30px">
+                    <h2 class="maverick-h2">Spanish</h2>
+                    <p class="card-p-arimo">
+                        <br>
+                        <br><a class="link-arimo maverick-p" href="https://www.dropbox.com/scl/fi/y4l6jemqtga94agij01xt/Microsoft-Teams-Value-Spanish.pptx?rlkey=ao4xgqw6pnmjxc2ojvt45iut4&dl=0" target="_blank">⬇︎ Download pptx</a>
+                    </p>
+                     </div>     
+              </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- <div class="hero-img">
+        <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/MSPs.png" style="width:100%" alt="">
+    </div> -->
+
+
+    <!-- <div class="grid-container">
+        <div class="logo-grid-knowledge">
+
+
+
+            <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/dutch-value-added.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                  <a href="https://www.microsoft.com/en-us/microsoft-365/blog/2022/08/29/discover-how-microsoft-teams-phone-keeps-12-million-pstn-users-connected/" target="_blank"><h2 class="maverick-h2">Microsoft Teams Value</h2></a>
+                  <p class="card-p-arimo">Dutch</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/french-deck-micro-teams.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                 <a href="https://indd.adobe.com/view/35040664-bc91-4cca-8672-bca8a29e4cae?aliId=eyJpIjoiM0NaaEtDYWpoaEVMOTg4ViIsInQiOiJIMlNlR1VFTDZVdGpz" target="_blank"> <h2 class="card-h2-arimo"> Microsoft Teams Value</h2></a>
+                  <p class="maverick-p"> English</p>
+                </div>
+              </div>
+
+
+
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/french-deck-micro-teams.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                 <a href="https://indd.adobe.com/view/35040664-bc91-4cca-8672-bca8a29e4cae?aliId=eyJpIjoiM0NaaEtDYWpoaEVMOTg4ViIsInQiOiJIMlNlR1VFTDZVdGpz" target="_blank"> <h2 class="card-h2-arimo"> Microsoft Teams Value</h2></a>
+                  <p class="maverick-p"> French</p>
+                </div>
+              </div>
+
+              
+
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/french-deck-micro-teams.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                 <a href="https://indd.adobe.com/view/35040664-bc91-4cca-8672-bca8a29e4cae?aliId=eyJpIjoiM0NaaEtDYWpoaEVMOTg4ViIsInQiOiJIMlNlR1VFTDZVdGpz" target="_blank"> <h2 class="card-h2-arimo"> Microsoft Teams Value</h2></a>
+                  <p class="maverick-p"> German</p>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+        
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/french-deck-micro-teams.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                 <a href="https://indd.adobe.com/view/35040664-bc91-4cca-8672-bca8a29e4cae?aliId=eyJpIjoiM0NaaEtDYWpoaEVMOTg4ViIsInQiOiJIMlNlR1VFTDZVdGpz" target="_blank"> <h2 class="card-h2-arimo"> Microsoft Teams Value</h2></a>
+                  <p class="maverick-p"> Spanish</p>
+                </div>
+              </div>
+
+
+
+        </div>
+    </div> -->
+    <div class="card-padding-30px"></div> 
+
+
+
+
+
+    <div>
+        <h2 class="maverick-font-arimo">Vendor assets</h2>
+    </div>
+    <div class="grid-container">
+        <div class="logo-grid-vendor">
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/thinksmart-lenovo.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                    <h2 class="maverick-h2">Lenovo x Microsoft</h2>
+                    <p class="card-p-arimo"> The All New Lenovo ThinkSmart <br>One Smart Collaboration Bar
+                        <br>
+                        <br><a class="link-arimo maverick-p" href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/EU_Website/ThinkSmart_One_Lenovo.pdf" target="_blank">⬇︎ Download pdf</a>
+                    </p>
+                 </div>
+              </div>
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/logitech-room-solutions.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                    <h2 class="maverick-h2">Logitech x Microsoft </h2>
+                    <p class="card-p-arimo">Logitech Room Solutions for <br>Microsoft Teams
+                        <br>
+                        <br><a class="link-arimo maverick-p" href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/EU_Website/room-solutions-for-microsoft-teams.pdf" target="_blank">⬇︎ Download pdf</a>
+                    </p>
+                  </div>
+              </div>
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/neat-teams-micro.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                    <h2 class="maverick-h2">Neat x Microsoft</h2>
+                    <p class="card-p-arimo">Neat Microsoft Teams <br>Implementation Guide
+                        <br>
+                        <br><a class="link-arimo maverick-p" href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/EU_Website/Neat_MTR_Implementation_Guide_Version1.pdf" target="_blank">⬇︎ Download pdf</a>
+                    </p>
+                     </div>     
+              </div>
+
+
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/newcrestron.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                    <h2 class="maverick-h2">The New Crestron</h2>
+                    <p class="card-p-arimo">Enterprise and UC Platforms <br>for the Modern Workplace
+                        <br>
+                        <br><a class="link-arimo maverick-p" href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/EU_Website/wm_evolution_of_crestron_whitepaper-small.pdf" target="_blank">⬇︎ Download pdf</a>
+                    </p>
+                     </div>     
+              </div>
+
+
+
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/micro-crestron.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                    <h2 class="maverick-h2">Crestron + Microsoft Teams Panels</h2>
+                    <p class="card-p-arimo">Unlock the full potential of Microsoft Teams with advanced <br> room scheduling
+                        <br>
+                        <br><a class="link-arimo maverick-p" href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/EU_Website/pb_Microsoft_TSS-Scheduling.pdf" target="_blank">⬇︎ Download pdf</a>
+                    </p>
+                     </div>     
+              </div>
+
+              
+              <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/devicecisco.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                    <h2 class="maverick-h2">Cisco devices for Microsoft Teams Rooms</h2>
+                    <p class="card-p-arimo">
+                        <br>
+                        <br><a class="link-arimo maverick-p" href="https://eu.tdsynnex.com/Nuploads/Country/COM/Documents/EU_Website/cisco-devices-for-microsoft-teams-rooms.pdf" target="_blank">⬇︎ Download pdf</a>
+                    </p>
+                     </div>     
+              </div>
+
+
+
+        </div>
+    </div>
+    <div class="card-padding-30px"></div>
+
+
+    <div>
+        <h2 class="maverick-font-arimo">Videos</h2>
+    </div>
+    <div class="grid-container">
+        <div class="logo-grid-video">
+            <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/enhanced-micro.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                    <a href="https://www.youtube.com/watch?v=1Yls6T_L8dw" target="_blank"><h2 class="card-h2-arimo">Enhancing Collaboration <br>with the Microsoft Surface <br>Hub</h2></a>
+                </div>
+              </div>
+            <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/surface-hub-learn-more.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                    <a href="https://youtu.be/tt_k5iOt6yU" target="_blank"><h2 class="card-h2-arimo">Learn more about Microsoft Surface Hub</h2></a>
+                </div>
+              </div>
+        
+            <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/surface-hub.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                    <a href="https://www.youtube.com/watch?v=N1gYu_93RYQ" target="_blank"><h2 class="card-h2-arimo">Microsoft Surface Hub 2S - How to use the interactive whiteboard display?</h2></a>
+                </div>
+              </div>
+            <div class="card">
+                <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/micro-team-vid.png" alt="" style="width:100%">
+                <div class="container card-padding-30px">
+                    <a href="https://www.youtube.com/watch?v=GRHE5NofGGA&t" target="_blank"><h2 class="card-h2-arimo">Microsoft Teams Rooms licensing changes</h2></a>
+                </div>
+              </div>
+
+    </div>
+</section>
+</section>
+
+<!-- Resources: Vendor Assets -->
+
+        <!-- footer -->
+
+           <div class="component-flex-center gradient-background">
+                    <div>
+                        <h2 class="maverick-font-arimo-white">Not a TD SYNNEX 
+                            <br>
+                            Partner yet?</h2>
+                        <a href="https://easygoing.tdsynnex.eu/Registration12/CustomerSupplicationForm?lang=EN"><p class="button-transparent">Register here</p></a>
+                    </div>
+
+                    <div>
+                        <h2 class="maverick-font-arimo-white">Not a TD SYNNEX 
+                            <br>
+                            Microsoft Partner yet?</h2>
+                            <a href="https://eu.tdsynnex.com/InTouch/MVC/Microsite/Private?corpregionid=50&categorypageid=915&msmenuid=10258&culture=en-GB">   <p class="button-transparent ">Contact us</p></a>
+                    </div>
+
+                    <div>
+                        <h2 class="maverick-font-arimo-white">Level up for offering 
+                        </h2>
+                     <a href="https://eu.tdsynnex.com/InTouch/MVC/Microsite/Private?corpregionid=50&categorypageid=915&msmenuid=10258&culture=en-GB">   <p class="button-transparent ">Level up</p></a>
+                    </div>
+                </div>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    (function () {
+        var carousels = document.querySelectorAll('.js-product-carousel');
+
+        [].forEach.call(carousels, function (carousel) {
+            carouselize(carousel);
+        });
+
+    })();
+
+    function carouselize(carousel) {
+        var productList = carousel.querySelector('.js-product-list');
+        var productListWidth = 0;
+        var productListSteps = 0;
+        var products = carousel.querySelectorAll('.product');
+        var productAmount = 0;
+        var productAmountVisible = 4;
+        var carouselPrev = carousel.querySelector('.js-carousel-prev');
+        var carouselNext = carousel.querySelector('.js-carousel-next');
+
+        //Count all the products
+        [].forEach.call(products, function (product) {
+            productAmount++;
+            productListWidth += 400;
+            productList.style.width = productListWidth + "px";
+        });
+
+        carouselNext.onclick = function () {
+            if (productListSteps < productAmount - productAmountVisible) {
+                productListSteps++;
+                moveProductList();
+            }
+        }
+        carouselPrev.onclick = function () {
+            if (productListSteps > 0) {
+                productListSteps--;
+                moveProductList();
+            }
+        }
+
+        // This is a bit hacky, let me know if you find a better way to do this!
+        // Move the carousels product-list
+        function moveProductList() {
+            productList.style.transform = "translateX(-" + 400 * productListSteps + "px)";
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body><!-- Carousel JS --></html>

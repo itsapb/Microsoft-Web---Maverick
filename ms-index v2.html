@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html><head>
+        <meta charset="utf-8">
+        <style type="text/css">
+
+            @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500&family=PT+Serif:wght@400;700&display=swap');
+
+            
+            * {
+                font-family: 'Arimo', sans-serif;
+                font-family: 'Nunito Sans', sans-serif;
+                font-family: 'PT Serif', serif;
+            }
+
+            .mp-content {
+                max-width: 1280px !important;
+                margin: auto !important;
+            }     
+            .section-container  {
+                padding: 40px !important;
+            }
+
+            .hero-img {
+            width: 100% !important;
+            height: auto !important;
+        }
+            .grey-background {
+                background-color: #F4F4F2 !important;
+            }
+
+            .maverick-h1 {
+                color: #0C073D !important;
+                font-family: "Nunito Sans" !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                font-size: 35px !important;
+                font-weight: bold !important;
+            }
+
+            h2 {
+                font-size: 20px !important;
+                line-height: 1.5 !important;
+            }
+
+            p {
+                margin: 0 0 10px !important;
+                line-height: 1.5 !important;
+                font-size: 16px !important;
+            }
+            
+            .maverick-h2, .maverick-p {
+                color: #0C073D !important;
+                font-family: "Nunito Sans" !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                
+            }
+
+            .maverick-carousel-h1 {
+                color: #0C073D !important;
+                font-family: "Nunito Sans" !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                font-size: 25px !important;
+                margin-top: 0.2em !important;
+                margin-bottom: 0.5em !important;
+                line-height: 204x !important;
+                text-align: center !important;
+            }
+
+            .maverick-font-arimo {
+                    color: #0C073D !important;
+                    font-family: 'Arimo', sans-serif !important;
+                    font-weight: 400 !important;
+                }
+
+                .maverick-font-arimo-grey {
+                    color: #707070 !important;
+                    font-family: 'Arimo', sans-serif !important;
+                }
+
+                .maverick-font-arimo-white {
+                    color: white !important;
+                    font-family: 'Arimo', sans-serif !important;
+                    margin-top: 0 !important; 
+                    font-weight: 400 !important;
+                }
+
+
+            /* button */
+
+            .button-two {
+                background-color: white !important;
+                color: #0C073D !important;
+                font-family: 'Arimo', sans-serif !important;
+                border: 2px solid #0C073D !important;
+                border-radius: 9999px !important;
+                padding: 10px 2px !important;
+                text-align: center !important;
+                text-decoration: none !important;
+                display: inline-block !important;
+                font-size: 16px !important;
+                margin: 4px 2px !important;
+                float: none;
+            }
+
+            .button-transparent {
+                background-color: white !important;
+                opacity: 80% !important;
+                color: #0C073D !important;
+                font-family: 'Arimo', sans-serif !important;
+                border: 2px solid #0C073D !important;
+                border-radius: 9999px !important;
+                padding: 15px 32px !important;
+                text-align: center !important;
+                text-decoration: none !important;
+                display: inline-block !important;
+                font-size: 16px !important;
+                margin: 4px 2px !important;
+            }
+
+            /* Maverick + Microsoft solved for you icons */
+
+            .icon-component-text {
+                text-align: center !important;
+                padding-left: 218px !important;
+                padding-right: 218px !important;
+            }
+
+            .icon-component {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                text-align: center !important;
+                padding: 0 166px 0 166px !important;
+                justify-content: space-between !important;
+            }
+
+            .hr-maverick {
+                color: #C3C3C3 !important;
+            }
+
+            .height-80 {
+                height: 80px !important;
+            }
+
+            .height-50 {
+                height: 50px !important;
+            }
+
+            /* Microsoft contact grid */
+
+            .logo-grid {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr 1fr 1fr !important;
+                gap: 1px !important;
+            }
+
+            .grid-container{
+                width: 100% !important;
+                display: flex !important;
+                justify-content: center !important;
+            }
+
+            .mv-logos {
+                width: 100% !important;
+            }
+
+            /* Microsoft Teams logo grid */
+
+            .logo-grid-teams {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr !important;
+                gap: 1px !important;
+            }
+
+            .grid-container{
+                width: 100% !important;
+                display: flex !important;
+                justify-content: center !important;
+            }
+
+            /* Carousel styles */
+
+   /* Carousel styles */
+
+   .car-container {
+        padding: 20px !important;
+        /* -webkit-box-shadow: 0px 0px 20px #f0f0f0!important;
+    box-shadow: 0px 0px 20px #f0f0f0!important; */
+        margin-top: 50px !important;
+    }
+
+    .glide__slide {
+        -webkit-box-shadow: 0px 0px 20px #f0f0f0 !important;
+        box-shadow: 0px 0px 20px #f0f0f0 !important;
+
+    }
+
+    /* Moving the bullets above the carousel */
+    .glide__bullets {
+        /* border: 1px solid red!important; */
+        top: -50px !important;
+        bottom: reset !important;
+        height: auto !important;
+    }
+
+    .glide__bullet {
+        background-color: #000;
+        border: 1px solid #000 !important;
+    }
+
+    .glide__bullet:checked,
+    .glide__bullet::after,
+    .glide__bullet:active {
+        background-color: #000 !important;
+
+    }
+
+    .slide-img {
+        width: 380px !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    .slide-text-wrap {
+        display: flex !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        color: #000 !important;
+        width: 380px !important;
+        height: 300px !important;
+        padding: 40px !important;
+    }
+
+    .slide-heading {
+        color: #0C073D !important;
+        font-family: "Nunito Sans" !important;
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        font-style: normal;
+        line-height: 204x !important;
+        text-align: center !important;
+    }
+
+    .slide-text {
+        
+        margin-top: 0.2em !important;
+        color: #0C073D !important;
+        font-family: 'Arimo', sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        font-style: normal;
+        line-height: 20px !important;
+        text-align: center !important;
+
+    }
+
+    .glide__arrow {
+        color: #000 !important;
+        top: 44% !important
+    }
+
+    /* divider */
+    .divider-1px {
+        margin: 0px 0px;
+        height: 1px;
+        background-color: #000;
+        width: 100%;
+    }
+
+    /* Seamless Section */
+
+    .seamless-text {
+        color: #000 !important;
+        margin-top: 0.2em !important;
+        font-family: "futura-pt", sans-serif !important;
+        font-weight: 500 !important;
+        font-size: 20px !important;
+        font-style: normal;
+        line-height: 24px !important;
+        text-align: center !important;
+    }
+
+
+    /* Video Carousel */
+
+    .video-section {
+        background-image: url("/logitech-landing-page/images/video-section-bg.png") !important;
+        height: auto !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        padding: 50px 0px;
+        margin-top: 100px;
+    }
+
+    .slide-video-wrap {
+        width: 780px !important;
+        height: 500px !important;
+        display: flex !important;
+        justify-content: center !important;
+        margin: auto;
+    }
+
+    /* Vanilla Car Styles */
+
+    .carousel {
+        margin-bottom: s0px;
+    }
+
+    .carousel__view {
+        width: 1200px;
+        height: 500px;
+        /* box-shadow: 0 1px 8px #888; */
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel__control {
+        position: absolute;
+        z-index: 1;
+        height: 500px;
+        width: 70px;
+        background-color: transparent;
+        transition: background-color 0.3s;
+        display: table;
+        cursor: pointer;
+    }
+
+    .carousel__control .icon {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .carousel__control:hover {
+        background-color: rgba(221, 221, 221, .8);
+    }
+
+    .carousel__control:first-of-type {
+        left: 0;
+        font-size: 40px;
+    }
+
+    .carousel__control:last-of-type {
+        right: 0;
+        font-size: 40px;
+    }
+
+    .product-list {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        transition: transform 0.3s;
+        transform: translateX(0px);
+        list-style: none;
+        height: 500px;
+    }
+
+    .product-list__item {
+        width: 400px;
+
+        display: inline-block;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .product span {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+    }
+
+    .product[data-slide="1"] {
+        background-color: #F4F4F2 !important;
+    }
+
+    .product[data-slide="2"] {
+        background-color: #F4F4F2 !important;
+    }
+
+    .product[data-slide="3"] {
+        background-color: #F4F4F2 !important;
+    }
+
+    .product[data-slide="4"] {
+        background-color: #F4F4F2 !important;
+    }
+
+    .product[data-slide="5"] {
+        background-color: #F4F4F2 !important;
+    }
+
+    .product[data-slide="6"] {
+        background-color: #F4F4F2 !important;
+    }
+
+    .product[data-slide="7"] {
+        background-color: #F4F4F2 !important;
+    }
+
+    /* Additional slide styles */
+    .slide-img-wrap {
+        width: 400px !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    .slide-img {
+        width: 100% !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    /* This needs a fixed hieght with content setting at the top */
+    .slide-text-wrap {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        color: #000 !important;
+        width: auto !important;
+
+        padding: 40px;
+    }
+
+    .slide-heading {
+        width: 100%;
+    }
+
+    .slide-heading,
+    .slide-text {
+        color: #0C073D !important;
+        font-family: 'Arimo', sans-serif !important;
+        text-align: center !important;
+    }
+
+    .slide-heading {
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 34px !important;
+        font-style: normal;
+        line-height: 34px !important;
+    }
+
+    .slide-text {
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        font-style: normal;
+        line-height: 20px !important;
+    }
+
+    /* Video Carousel Styles */
+
+
+    .carousel-2 {
+        width: 920px;
+        margin-bottom: 100px;
+        position: relative;
+        margin: auto;
+    }
+
+    .carousel__view-2 {
+        width: 780px;
+        height: 500px;
+        
+        /* box-shadow: 0 1px 8px #888; */
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel__control-2 {
+        position: absolute;
+        z-index: 1;
+        height: 500px;
+        width: 70px;
+        background-color: transparent;
+        transition: background-color 0.3s;
+        display: table;
+        cursor: pointer;
+    }
+
+    .carousel__control-2 .icon-2 {
+        display: absolute;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    /* This are not working look into it */
+
+
+    .carousel__control-2:hover {
+        background-color: rgba(221, 221, 221, .8);
+    }
+
+    .carousel__control-2:first-of-type {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+
+    }
+
+    .carousel__control-2:first-of-type .icon-2 {
+        position: absolute;
+        bottom: 230px;
+        left: 10px;
+        font-size: 40px;
+    }
+
+    .carousel__control-2:last-of-type {
+        right: 0;
+    }
+
+    .carousel__control-2:last-of-type .icon-2 {
+        position: absolute;
+        bottom: 230px;
+        right: 10px;
+        font-size: 40px;
+    }
+
+    .product-list-2 {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        transition: transform 0.3s;
+        transform: translateX(0px);
+        list-style: none;
+        height: 500px;
+    }
+
+    .product-list__item-2 {
+        width: 780px;
+        display: inline-block;
+    }
+
+    .product-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-2 span {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+    }
+
+    .product-2[data-slide="1"] {
+        background-color: #f6f6f6;
+    }
+
+    .product-2[data-slide="2"] {
+        background-color: #f6f6f6;
+    }
+
+    .product-2[data-slide="3"] {
+        background-color: #f6f6f6;
+    }
+
+    .product-2[data-slide="4"] {
+        background-color: #f6f6f6;
+    }
+
+    .product-2[data-slide="5"] {
+        background-color: #f6f6f6;
+    }
+
+    .product-2[data-slide="6"] {
+        background-color: #f6f6f6;
+    }
+
+    .product-2[data-slide="76"] {
+        background-color: #f6f6f6;
+    }
+
+    /* Additional slide styles */
+    .slide-img-wrap-2 {
+        width: 400px !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    .slide-img-2 {
+        width: 100% !important;
+        object-fit: contain !important;
+        height: 200px !important;
+    }
+
+    /* This needs a fixed hieght with content setting at the top */
+    .slide-text-wrap-2 {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        color: #000 !important;
+        width: auto !important;
+
+        padding: 40px;
+    }
+
+    .slide-heading-2 {
+        width: 100%;
+    }
+
+    .slide-heading-2,
+    .slide-text-2 {
+        color: #0C073D !important;
+        font-family: 'Arimo', sans-serif !important;
+        text-align: center !important;
+    }
+
+    .slide-heading-2 {
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        font-style: normal;
+        line-height: 204x !important;
+    }
+
+    .slide-text-2 {
+        margin-top: 0.2em !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        font-style: normal;
+        line-height: 20px !important;
+    }
+
+    /* Icon styling Microsoft Teams Room */
+
+    .icon-component-no-pad {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                text-align: center !important;
+                justify-content: space-between !important;
+            }
+
+    .icon-space-between {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .icon-smaller {
+        width: 80px !important;
+    }
+
+
+    .icon-component-headshot
+    {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                text-align: center !important;
+                justify-content: center !important;
+                gap: 30px !important;
+
+    }
+
+    .component-flex-center
+    {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                text-align: center !important;
+                justify-content: center !important;
+                align-items: center !important;
+                gap: 200px !important;
+    }
+
+    /* Bottom gradient */
+
+    .gradient-background {
+        background-image: url('https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/gradient-background.png') !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        height: 300px !important;
+        width: 100% !important;
+    }
+
+    .maverick-font-arimo-white {
+        color: white !important;
+        font-family: 'Arimo', sans-serif !important;
+
+    }
+
+    /* TD Synnex Classes*/
+
+    .content-wrap .content {
+    width: 1280px !important;
+    margin: 0 !important;
+}
+
+.center-button-mic {
+    
+    text-align: center !important;
+    padding-left: 218px !important;
+    padding-right: 218px !important;
+}
+
+        </style>
+    </head>
+
+    <body>
+        <div class="mp-content">
+
+            <header>
+                <img class="hero-img" src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/group%2033.png" alt="TD synnex logo &amp; Maverick">
+            </header>
+
+            <section>
+                <img class="hero-img" src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/hero%20inmage.png" alt="microsoft logo on graident green and blue background with image of man on an online call with four others">
+            </section>
+
+            <section class="grey-background">
+
+                <!-- Maverick + Microsoft solved for you icons -->
+
+                <div class="section-container">
+                    <div class="icon-component-text">
+                        <h1 class="maverick-h1">Maverick + Microsoft solved for you</h1>
+                        <h2 class="maverick-font-arimo">At Maverick we enable our reseller partners to design and deploy Microsoft Teams Rooms experiences from end to end. </h2>
+                    </div>
+                    <div class="icon-component">
+                        <div style="padding-right:95px;">
+                            <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/ellipse%201-users.png" alt="teams icon">
+                            <h2 class="maverick-h2 height-80">270 million monthly active Teams users</h2>
+                            <p class="maverick-font-arimo">Teams is the runaway market leader and has a brilliant ecosystem of Teams Room technology to enable it in the meeting space. </p>
+                        </div>
+
+                        <div>
+                            <img src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/Ellipse%201-office-ready.png" alt="teams icon">
+                            <h2 class="maverick-h2 height-80">Less than 8% <br> office ready</h2>
+                            <p class="maverick-font-arimo">Only 7.8% out of the nearly 90 million meetings rooms worldwide already have the appropriate equipment for hybrid meetings, representing a huge opportunity for integrators.</p>
+                        </div>
+
+                        <div style="padding-left:95px;">
+                            <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/Ellipse 3-vid-conference.png" alt="video conference icon">
+                            <h2 class="maverick-h2 height-80">Top priority video conferencing</h2>
+                            <p class="maverick-font-arimo">Video conferencing is the #2 IT priority right after cloud migrations. Video conferencing systems are now built around the networked IT ecosystem. </p>
+                        </div>
+                    </div>
+                </div>
+                <hr width="90%" color="#C3C3C3" size="1" align="center" margin-top="">
+
+                  <!-- Microsoft Teams Room -->
+
+                  <section class="section-container">
+
+
+                    <div class="icon-component-text">
+                        <h1 class="maverick-h1">What is a Microsoft Teams Room?</h1>
+                    </div>
+
+
+                    <div class="section-container">
+   
+                        <div class="icon-component-no-pad">
+                            <div class="icon-space-between">
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv_teams_room_inclusive.png" alt="teams icon" class="icon-smaller">
+                                <p class="maverick-h2 height-50">Inclusive</p>
+                                <p class="maverick-font-arimo">Foster inclusive and interactive team meetings for everyone, regardless of where they are.</p>
+                            </div>
+    
+                            <div class="icon-space-between">
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv_teams_room_easy.png" alt="teams icon" class="icon-smaller">
+                                <p class="maverick-h2 height-50">Easy to use for all</p>
+                                <p class="maverick-font-arimo">Deliver consistent Teams experiences designed to make collaboration easy and hassle-free. </p>
+                            </div>
+    
+                            <div class="icon-space-between">
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv_teams_room_flexible.png" alt="video conference icon" class="icon-smaller">
+                                <p class="maverick-h2 height-50">Flexible</p>
+                                <p class="maverick-font-arimo">Turn any shared space into a Teams Room with a wide selection of devices and features to fit every need.</p>
+                            </div>
+
+                            <div class="icon-space-between">
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv_teams_room_secured.png" alt="video conference icon" class="icon-smaller">
+                                <p class="maverick-h2 height-50">Secured &amp; managed</p>
+                                <p class="maverick-font-arimo">Keep devices protected and up to date with rich management capabilities and powerful analytics.</p>
+                            </div>
+                        </div>
+
+                        <div class="icon-component-text">
+                            <h2 class="maverick-font-arimo">A Microsoft Teams Room is a cutting-edge meeting space solution expertly designed to bridge the gaps between locations and individuals, in office environments, bringing hybrid workers into meetings seamlessly through Teams.</h2>
+                            <p class="maverick-font-arimo-grey">Microsoft Teams Rooms promote inclusive and collaborative meetings, guaranteeing that all participants have an equal presence at the virtual table, irrespective of their joining location.  
+                            </p><p class="maverick-font-arimo">Enhancing the meeting experience with Microsoft Teams Room Pro License. </p>
+                            <p class="maverick-font-arimo-grey">Microsoft Teams Rooms Pro delivers an enhanced meeting experience through its intelligent audio and video, front row and large galleries, and dual screen support. With Teams Rooms Pro, teams can experience better communication and collaboration during meetings.</p>
+                            <!-- button -->
+                            <div class="center-button">
+                                <a href="https://www.microsoft.com/en-us/microsoft-teams/microsoft-teams-rooms" target="_blank"><p class="button-transparent" >Find out more</p></a>
+                            </div>
+                            </div>
+
+
+                    </div>
+
+
+
+                </section>
+                <hr width="90%" color="#C3C3C3" size="1" align="center">
+
+                <!-- Microsoft Teams logo grid -->
+
+                <section class="section-container">
+                    <div class="icon-component-text">
+                        <h1 class="maverick-h1">Microsoft Teams Rooms certified devices</h1>
+                        <h2 class="maverick-font-arimo">With the most extensive collection of top-tier manufacturers offering Microsoft Teams Rooms certified devices, Maverick stands out as the premier partner for integrators to access specialist services and resources for your Teams Room projects. </h2>
+                    </div>
+                    <h2 class="maverick-h2 icon-component-text">Certified Teams Rooms Devices Partners</h2>
+                    <br>
+                    <div class="grid-container">
+                        <div class="logo-grid-teams">
+                            <div>
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv-logo-cisco.png" alt="">
+                            </div> 
+                            <div>
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv-logo-crestron.png" alt="">
+                            </div> 
+                            <div>
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv-logo-jabra.png" alt="">
+                            </div>
+                            <div>
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv-logo-neat.png" alt="">
+                            </div>
+                            <div>
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv-logo-lenovo.png" alt="">
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                            <div>
+                                <img src="" alt="">
+                            </div> 
+                            <div>
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv-logo-logitech.png" alt="">
+                            </div>  
+                        </div>
+                    </div>
+
+                    <br>
+                    <h2 class="maverick-h2 icon-component-text ">Supportive Brands to Fuel the Ecosystem</h2>
+                    <br>
+                    <div class="grid-container ">
+                        <div class="logo-grid-teams">
+                            <div>
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv-avocor.png" alt="">
+                            </div>
+                            <div>
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv-logo-bose.png" alt="">
+                            </div>
+                            <div>
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv-logo-huddly.png" alt="">
+                            </div> 
+                            <div>
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv-logo-microsoft.png" alt="">
+                            </div>
+                            <div>
+                                <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv-logo-sennheiser.png" alt="">
+                            </div>  
+                        </div>
+                    </div>
+                </section>
+                        <hr width="90%" color="#C3C3C3" size="1" align="center">
+
+                <!-- Spotlight Products -->
+
+                <section class="section-container mp-content">
+
+
+                    <div class="icon-component-text">
+                        <h1 class="maverick-h1">Spotlight Products</h1>
+                        <h2 class="maverick-font-arimo">Hardware solutions certified for Microsoft Teams Rooms </h2>
+                    </div>
+
+
+                    <div class="carousel js-product-carousel">
+                        <div class="carousel__view">
+                            <span class="carousel__control js-carousel-prev"><i class="icon">🡠</i></span>
+                            <span href="#" class="carousel__control js-carousel-next"><i class="icon">🡢</i></span>
+                            <ul class="product-list js-product-list">
+
+                                <li class="product-list__item">
+                                    <div data-slide="6" class="product">
+                                        <div class="slide-img-wrap">
+                                            <img class="slide-img" src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv_carousel_lenovo.png" alt="">
+                                        </div>
+                                        <div class="slide-text-wrap">
+                                            <h1 class="maverick-carousel-h1">
+                                                Lenovo ThinkSmart One
+                                            </h1>
+                                            <p class="slide-text">
+                                                The first Windows-based bar, is ideal for any business seeking a sustainable solution to its collaboration needs.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product-list__item">
+                                    <div data-slide="1" class="product">
+                                        <div class="slide-img-wrap">
+                                            <img class="slide-img" src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv-carousel-bar.png" alt="">
+                                        </div>
+                                        <div class="slide-text-wrap">
+                                            <h3 class="maverick-carousel-h1">
+                                                Logitech Tap with RallyBar
+                                            </h3>
+                                            <p class="slide-text">
+                                                Quickly join and easily host Microsoft Teams meetings. Suitable for medium sized rooms with the Logitech Rally Plus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product-list__item">
+                                    <div data-slide="2" class="product">
+                                        <div class="slide-img-wrap">
+                                            <img class="slide-img" src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/neatbar_carrousel_2.png" alt="">
+                                        </div>
+                                        <div class="slide-text-wrap">
+                                            <h3 class="maverick-carousel-h1">
+                                                Neat Bar + Pad
+                                            </h3>
+                                            <p class="slide-text">
+                                                A collaboration bar designed for Microsoft Teams. It includes Neat Bar and Neat Pad as a center of room controller.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product-list__item">
+                                    <div data-slide="6" class="product">
+                                        <div class="slide-img-wrap">
+                                            <img class="slide-img" src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/mv-carousel-conference-kit.png" alt="">
+                                        </div>
+                                        <div class="slide-text-wrap">
+                                            <h1 class="maverick-carousel-h1">
+                                                Crestron Flex UC-MX70-T
+                                            </h1>
+                                            <p class="slide-text">
+                                                The UC-M50-T Crestron Flex tabletop conferencing system provides a medium room video conference solution for use with Microsoft Teams.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product-list__item">
+                                    <div data-slide="7" class="product">
+                                        <span>7</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                
+            
+
+
+                </section>
+                        <hr width="90%" color="#C3C3C3" size="1" align="center">
+
+              
+
+
+                <!-- Microsoft Business Dev Managers -->
+               
+                <section class="section-container">   
+
+                    <div class="icon-component-text">
+                        <h1 class="maverick-h1">Meet our Microsoft Business Development Managers</h1>
+                    </div>
+                    <br>
+                    <div class="center-button-mic">
+                        <a href="mailto:info@tdsynnex.com" target="_blank"><p class="button-transparent" >Get in contact with one of our Teams Champions</p></a>
+                    </div>
+                </section>
+                <header>
+                    <img class="hero-img" src="https://uk.tdsynnex.com/Nuploads/Country/COM/Images/EU_website/image007.png" alt="">
+                </header>
+
+                <!-- <div class="section-container">
+                    <div class="icon-component-headshot">
+
+                        <div>
+                            <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/Tom-Ballard.png" alt="Headshot of Tom">
+                            <h2 class="maverick-font-arimo">Tom Ballard</h2>
+                            <p class="maverick-font-arimo">Based in the UK</p>
+                           <a href="https://www.linkedin.com/in/tom-ballard-00676a5/"> <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/LI-In-Bug.png" alt="Linked In Icon"></a>
+                        </div>
+
+                        <div>
+                            <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/Mette.png" alt="Headshot of Mette">
+                            <h2 class="maverick-font-arimo">Mette Finneman</h2>
+                            <p class="maverick-font-arimo">Based in the Nordics</p>
+                            <a href="https://www.linkedin.com/in/mette-finnemann-7bb2675/"><img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/LI-In-Bug.png" alt="Linked in Icon"></a>
+                        </div>
+                        <div>
+                            <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/Arik.png" alt="Headshot of Arik Jung">
+                            <h2 class="maverick-font-arimo">Arik Jung</h2>
+                            <p class="maverick-font-arimo">Based in DACH</p>
+                            <a href="https://www.linkedin.com/in/arik-jung/"><img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/LI-In-Bug.png" alt="Linked in Icon"></a>
+                        </div>
+                        <div>
+                            <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/murat.png" alt="Headshot of Mette">
+                            <h2 class="maverick-font-arimo">Murat Coskunyurek</h2>
+                            <p class="maverick-font-arimo">Based in the Benelux</p>
+                            <a href="https://www.linkedin.com/in/murat-coskunyurek/"><img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/LI-In-Bug.png" alt="Linked in Icon"></a>
+                        </div>
+                    </div>
+             </div>
+
+             <div class="section-container">
+                <div class="icon-component-headshot">
+
+                    <div>
+                        <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/daniel-b.png" alt="Headshot of Tom">
+                        <h2 class="maverick-font-arimo">Daniel Bartolomé Díaz</h2>
+                        <p class="maverick-font-arimo">Based in Iberia</p>
+                       <a href="https://www.linkedin.com/in/danielsmartmeetings/"> <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/LI-In-Bug.png" alt="Linked In Icon"></a>
+                    </div>
+
+                    <div>
+                        <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/arthur-N.png" alt="Headshot of Mette">
+                        <h2 class="maverick-font-arimo">Arthur Neuhaus</h2>
+                        <p class="maverick-font-arimo">Based in France</p>
+                        <a href="https://www.linkedin.com/in/arthur-neuhaus-2b9466137/"><img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/LI-In-Bug.png" alt="Linked in Icon"></a>
+                    </div>
+                    <div>
+                        <img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/no-pic.png" alt="Headshot of Mette">
+                        <h2 class="maverick-font-arimo">Grazyna Gontarczyk</h2>
+                        <p class="maverick-font-arimo">Based in Eastern Europe</p>
+                        <a href="https://www.linkedin.com/in/grazyna-gontarczyk-75b64989/"><img src="https://tdsynnex.com/Nuploads\Country\COM\Images\EU_website/LI-In-Bug.png" alt="Linked in Icon"></a>
+                    </div>
+                </div>
+         </div>
+                </section> -->
+
+                <!-- bottom of main page -->
+                
+            </section>
+            <section>
+            
+                <div class="component-flex-center gradient-background hero-img mp-content">
+                    <div>
+                        <h2 class="maverick-font-arimo-white">Not a TD SYNNEX 
+                            <br>
+                            Partner yet?</h2>
+                       <a href="https://easygoing.tdsynnex.eu/Registration12/CustomerSupplicationForm?lang=EN"> <p class="button-transparent">Register here</p></a>
+                    </div>
+
+                    <div>
+                        <h2 class="maverick-font-arimo-white">Not a TD SYNNEX 
+                            <br>
+                            Microsoft Partner yet?</h2>
+                  <a href="https://eu.tdsynnex.com/InTouch/MVC/Microsite/Private?corpregionid=50&categorypageid=915&msmenuid=10258&culture=en-GB">      <p class="button-transparent">Contact us</p></a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    (function () {
+        var carousels = document.querySelectorAll('.js-product-carousel');
+
+        [].forEach.call(carousels, function (carousel) {
+            carouselize(carousel);
+        });
+
+    })();
+
+    function carouselize(carousel) {
+        var productList = carousel.querySelector('.js-product-list');
+        var productListWidth = 0;
+        var productListSteps = 0;
+        var products = carousel.querySelectorAll('.product');
+        var productAmount = 0;
+        var productAmountVisible = 4;
+        var carouselPrev = carousel.querySelector('.js-carousel-prev');
+        var carouselNext = carousel.querySelector('.js-carousel-next');
+
+        //Count all the products
+        [].forEach.call(products, function (product) {
+            productAmount++;
+            productListWidth += 400;
+            productList.style.width = productListWidth + "px";
+        });
+
+        carouselNext.onclick = function () {
+            if (productListSteps < productAmount - productAmountVisible) {
+                productListSteps++;
+                moveProductList();
+            }
+        }
+        carouselPrev.onclick = function () {
+            if (productListSteps > 0) {
+                productListSteps--;
+                moveProductList();
+            }
+        }
+
+        // This is a bit hacky, let me know if you find a better way to do this!
+        // Move the carousels product-list
+        function moveProductList() {
+            productList.style.transform = "translateX(-" + 400 * productListSteps + "px)";
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body><!-- Carousel JS --></html>
